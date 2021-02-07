@@ -1,0 +1,64 @@
+/* Layout */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: #888;
+  }
+  
+  sidebar{
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    background: #999;
+  }
+  
+  main{
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    right: 0;
+    bottom: 0;
+    background: #CCC;
+    padding: 1rem;
+  }
+  
+  #content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* This is what we are focused on */
+  .table-wrapper{
+    overflow-y: scroll;
+    flex-grow: 1;
+  }
+  
+  .table-wrapper th{
+      position: sticky;
+      top: 0;
+  }
+  
+  /* A bit more styling to make it look better */
+  .table-wrapper{
+    background: CadetBlue;
+  }
+  
+  table{
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th{
+      background: #DDD;
+  }
+  
+  td,th{
+    padding: 10px;
+    text-align: center;
+  }
